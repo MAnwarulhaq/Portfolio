@@ -27,7 +27,7 @@ nav ul a:hover{
 
 
 
-ul{
+nav ul{
     display: flex;
     justify-content: center;
     align-items: center;

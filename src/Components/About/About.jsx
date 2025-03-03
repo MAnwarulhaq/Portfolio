@@ -32,6 +32,40 @@ function About() {
             </li>
           </ul>
         </div>
+        <div className="education">
+          <h1>Education</h1>
+          <ul>
+            <li>
+              <span>Degree</span>: BS Computer Science
+            </li>
+            <li>
+              <span>Contact</span>: 03090870389
+            </li>
+            <li>
+              <span>Email</span>: muhammadanwarulhaq15@gmail.com
+            </li>
+            <li>
+              <span>Location</span>: Saddar Karachi
+            </li>
+          </ul>
+        </div>
+        <div className="personalinfo">
+          <h1>Personal Info</h1>
+          <ul>
+            <li>
+              <span>Name</span>: Muhammad Anwar ul Haq
+            </li>
+            <li>
+              <span>Contact</span>: 03090870389
+            </li>
+            <li>
+              <span>Email</span>: muhammadanwarulhaq15@gmail.com
+            </li>
+            <li>
+              <span>Location</span>: Saddar Karachi
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="rightabout">
 
