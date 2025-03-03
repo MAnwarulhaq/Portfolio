@@ -21,6 +21,15 @@ function About() {
             <li>
               <span>Name</span>: Muhammad Anwar ul Haq
             </li>
+            <li>
+              <span>Contact</span>: 03090870389
+            </li>
+            <li>
+              <span>Email</span>: muhammadanwarulhaq15@gmail.com
+            </li>
+            <li>
+              <span>Location</span>: Saddar Karachi
+            </li>
           </ul>
         </div>
       </div>
