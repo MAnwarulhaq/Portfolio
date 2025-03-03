@@ -1,0 +1,136 @@
+#home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.lefthome {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* .homedetail {
+
+    font-size: 2vmax;
+}
+
+.line1 {
+    font-size: 0.8em;
+}
+
+.line2 {
+    font-size: 1.5em;
+    background: linear-gradient(to right, rgb(66, 180, 205), white);
+
+    background-clip: text;
+    color: transparent;
+}
+
+.line3 {
+    font-size: 1;
+    height: 10vh;
+} */
+.homedetail {
+    font-size: clamp(1.5rem, 2vw, 2.5rem); /* ✅ Dynamic font size */
+}
+
+.line1 {
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.line2 {
+    font-size: clamp(1.2rem, 2vw, 2rem); /* ✅ Adjust gradient text size */
+    background: linear-gradient(to right, rgb(66, 180, 205), white);
+
+    background-clip: text;
+    color: transparent;
+}
+
+.line3 {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    height: 10vh;
+}
+
+/* 🔹 Mobile Responsive Fix */
+@media (max-width:750px){
+    .homedetail {
+        font-size: 1.8rem; /* ✅ Slightly bigger */
+    }
+
+    .line1 {
+        font-size: 1rem; /* ✅ More readable */
+    }
+
+    .line2 {
+        font-size: 1.5rem; /* ✅ Adjusted for mobile */
+    }
+
+    .line3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+.lefthome button{
+    padding: 10px 30px;
+    background-color: rgb(66, 180, 205);
+    color: black;
+    border: 2px solid rgb(66, 180, 205);
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 19px;
+    transition: all 0.2s;
+    cursor: pointer;
+
+}
+
+.lefthome button:hover{
+    background-color: transparent;
+    color: rgb(66, 180, 205);
+}
+
+.righthome {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.righthome img {
+    width: 60%;
+    filter: drop-shadow(2px 2px 20px rgb(0, 208, 255));
+    margin-top: 30px;
+}
+
+@media (max-width:750px){
+    #home {
+        flex-direction: column-reverse; /* ✅ column-reverse کی جگہ column رکھیں */
+    }
+
+    .lefthome {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center; /* ✅ Center align کریں */
+    }
+
+    .righthome {
+        width: 100%;
+        min-height: 50vh; /* ✅ Ensures image stays at the bottom */
+        display: flex;
+        align-items: flex-end; /* ✅ Move image to bottom */
+        justify-content: center;
+    }
+
+    .righthome img {
+        width: 50%; /* ✅ Responsive image size */
+        max-width: 250px;
+        margin-top: 0px;
+    }
+}
