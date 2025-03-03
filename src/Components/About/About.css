@@ -4,14 +4,17 @@
     display: flex;
     }
 .leftabout{
-    width: 50%;
+    width: 60%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 80px;
 }
 .rightabout{
-    width: 50%;
+    width: 40%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -24,8 +27,8 @@
     flex-direction: column;
 }
 .cricle{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
     background-color: #7ad7ea;
     box-shadow: 2px 2px 20px  #7ad7ea;
@@ -33,6 +36,30 @@
 }
 .line{
     width: 2px;
-    height: 120px;
+    height: 100px;
     background-color:  #7ad7ea;
+}
+
+.aboutdetail{
+    display: flex;
+    flex-direction: column;
+    
+}
+.aboutdetail ul{
+    list-style: none;
+}
+.aboutdetail h1{
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(198, 42, 96), white);
+
+    background-clip: text;
+    color: transparent;
+}
+
+.aboutdetail li{
+    color: white;
+}
+
+.aboutdetail span{
+    color: #7ad7ea;
 }
