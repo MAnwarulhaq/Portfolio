@@ -27,7 +27,7 @@ function About() {
               <span>Email</span>: muhammadanwarulhaq15@gmail.com
             </li>
             <li>
-              <span>Location</span>: Saddar Karachi
+              <span>Location</span>: Noor E Bahar Restaurant ,Saddar Karachi
             </li>
           </ul>
         </div>
