@@ -23,9 +23,11 @@
     scroll-behavior: smooth; /* Smooth scrolling effect */
     white-space: nowrap;
     scrollbar-width: none;
+    padding: 40px;
 }
 
-#projects h1{
+#para{
+    text-align: center;
     font-size: 4vmax;
    
     background: linear-gradient(to right, rgb(198, 42, 96), white);
