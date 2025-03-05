@@ -1,25 +1,20 @@
-#about {
+#about{
     width: 100%;
     height: 100%;
     display: flex;
     box-sizing: border-box;
-    flex-wrap: wrap; /* ✅ Ensures responsiveness */
-}
-
-/* Left Side (Info + Circle Line) */
-.leftabout {
+    }
+.leftabout{
     width: 70%;
     height: 100vh;
-    display: flex;  /* ✅ Flexbox enable */
-    align-items: flex-start; /* ✅ Align items at the top */
-    justify-content: space-between; /* ✅ Proper spacing */
-    flex-direction: row; /* ✅ Keep them in a row */
-    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
     margin-left: 80px;
 }
-
-/* Right Side (Cards) */
-.rightabout {
+.rightabout{
     width: 30%;
     height: 100vh;
     gap: 10px;
@@ -28,64 +23,97 @@
     justify-content: center;
     flex-direction: column;
 }
-
-/* Circle and Line */
-.cricle-line {
+.cricle-line{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
-
-.cricle {
+.cricle{
     width: 60px;
     height: 60px;
     border-radius: 50px;
     background-color: #7ad7ea;
-    box-shadow: 2px 2px 20px #7ad7ea;
-}
+    box-shadow: 2px 2px 20px  #7ad7ea;
 
-.line {
+}
+.line{
     width: 2px;
     height: 100px;
-    background-color: #7ad7ea;
+    background-color:  #7ad7ea;
 }
 
-/* About Details */
-.aboutdetail {
+.aboutdetail{
     display: flex;
     flex-direction: column;
-    width: 100%; /* ✅ Takes remaining space */
+    
 }
-
-.aboutdetail ul {
+.aboutdetail ul{
     list-style: none;
 }
-
-.aboutdetail h1 {
+.aboutdetail h1{
     font-size: 20px;
     background: linear-gradient(to right, rgb(198, 42, 96), white);
+
     background-clip: text;
     color: transparent;
 }
 
-.aboutdetail li {
+.aboutdetail li{
     color: white;
 }
 
-.aboutdetail span {
+.aboutdetail span{
     color: #7ad7ea;
 }
 
-/* 🔹 Responsive Design */
-@media (max-width: 1024px) {
-    .leftabout {
-        width: 100%; /* ✅ Full width on tablets */
-        margin-left: 0;
-    }
-    .rightabout {
+@media (max-width:750px) {
+    #about{
         width: 100%;
-        height: auto;
+        
+        
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
     }
+    .leftabout{
+        width: 100%;
+        gap: 10px;
+        padding: 10px;
+        
+        
+        margin: 0px;
+        
+        
+        
+    }
+    .rightabout{
+        width: 100%;
+    
+      
+    }
+    .cricle{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #7ad7ea;
+        box-shadow: 2px 2px 20px  #7ad7ea;
+    
+    }
+    .line{
+        width: 2px;
+        height: 170px;
+        background-color:  #7ad7ea;
+    }
+    .aboutdetail h1{
+        font-size: 15px;
+        background: linear-gradient(to right, rgb(198, 42, 96), white);
+    
+        background-clip: text;
+        color: transparent;
+    }
+    
 }
-
+ 
