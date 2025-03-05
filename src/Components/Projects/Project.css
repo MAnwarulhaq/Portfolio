@@ -1,0 +1,38 @@
+#projects {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.slider {
+    width: 90%;
+    height: 300px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Start se scroll hoga */
+    overflow-x: auto; /* Scroll allow karega */
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 20px; /* Extra spacing for better view */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+#projects h1{
+    font-size: 4vmax;
+   
+    background: linear-gradient(to right, rgb(198, 42, 96), white);
+
+    background-clip: text;
+    color: transparent;
+}
+
+
+

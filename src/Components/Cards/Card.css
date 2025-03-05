@@ -13,6 +13,7 @@
     border-radius: 10px;
     transition: all 0.2s;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .card:hover{
