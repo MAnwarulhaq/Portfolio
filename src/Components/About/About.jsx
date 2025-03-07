@@ -44,10 +44,11 @@ function About() {
       x: -100,
       opacity: 0,
       duration: 1,
+      stagger:0.5,
       scrollTrigger: {
         trigger: ".cricle",
-        start: "top 90%",  // جب یہ viewport میں 90% آئے تو شروع ہو
-        end: "top 30%",    // جب viewport میں 30% پہنچے تو ختم ہو
+        start: "top 90%", 
+        end: "top 30%",   
         scrub: 2,
         
       },
@@ -57,14 +58,70 @@ function About() {
       x: -100,
       opacity: 0,
       duration: 1,
+      stagger:0.5,
       scrollTrigger: {
         trigger: ".line",
-        start: "top 95%", // لائن animation تھوڑا پہلے شروع ہو
+        start: "top 95%", 
         end: "top 40%",
         scrub: 2,
         
+      }
+    });
+    gsap.from(".aboutdetail h1", {
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: ".aboutdetail", 
+        start: "top 80%", 
+        end: "top 40%",
+        scrub: 2,
       },
     });
+    
+      gsap.from(".aboutdetail li", {
+        y: 100,  
+        opacity: 0, 
+        duration: 1,  
+        stagger: 0.2, 
+        scrollTrigger: {
+          trigger: ".aboutdetail", 
+          start: "top 85%", 
+          end: "top 40%",
+          scrub: 2, 
+        },
+      });
+      gsap.from(".aboutdetail ul", {
+        y: 100,  
+        opacity: 0, 
+        duration: 1,  
+        stagger: 0.2, 
+        scrollTrigger: {
+          trigger: ".aboutdetail", 
+          start: "top 85%", 
+          end: "top 40%",
+          scrub: 2, 
+        },
+      });
+      gsap.from(".rightabout", {
+        x: -100,  
+        opacity: 0, 
+        duration: 1,  
+        stagger: 0.2, 
+        scrollTrigger: {
+          trigger: ".rightabout", 
+          start: "top 85%", 
+          end: "top 40%",
+          scrub: 2, 
+        },
+      });
+     
+      
+
+     
+    
+
   });
   
   return (
