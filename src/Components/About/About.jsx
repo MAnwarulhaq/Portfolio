@@ -2,8 +2,71 @@ import React from 'react'
 import "./About.css"
 import Card from '../Cards/Card'
 import mern from "../../Assets/mern.png"
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
 
 function About() {
+  // useGSAP(()=>{
+  //   gsap.from(".cricle",{
+  //     x:-100,
+  //     duration:1,
+  //     opacity:0,
+  //     scrollTrigger:{
+  //       trigger:".cricle",
+  //       scroll:"body",
+  //       scrub:2,
+  //       markers:true,
+  //       start:"top 80%",
+  //       end:"20%"
+  //     }
+  //   })
+  //   gsap.from(".line",{
+  //     x:-100,
+  //     duration:1,
+  //     opacity:0,
+  //     scrollTrigger:{
+  //       trigger:".line",
+  //       scroll:"body",
+  //       scrub:2,
+  //       markers:true,
+  //       start:"top 90%",
+  //       end:"20%"
+  //     }
+  //   })
+    
+    
+    
+  // })
+  useGSAP(() => {
+    gsap.from(".cricle", {
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".cricle",
+        start: "top 90%",  // جب یہ viewport میں 90% آئے تو شروع ہو
+        end: "top 30%",    // جب viewport میں 30% پہنچے تو ختم ہو
+        scrub: 2,
+        
+      },
+    });
+  
+    gsap.from(".line", {
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".line",
+        start: "top 95%", // لائن animation تھوڑا پہلے شروع ہو
+        end: "top 40%",
+        scrub: 2,
+        
+      },
+    });
+  });
+  
   return (
     <div id='about'>
       <div className="leftabout">
