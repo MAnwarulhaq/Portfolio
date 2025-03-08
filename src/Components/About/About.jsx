@@ -80,18 +80,7 @@ function About() {
       },
     });
     
-      gsap.from(".aboutdetail li", {
-        y: 100,  
-        opacity: 0, 
-        duration: 1,  
-        stagger: 0.2, 
-        scrollTrigger: {
-          trigger: ".aboutdetail", 
-          start: "top 85%", 
-          end: "top 40%",
-          scrub: 2, 
-        },
-      });
+    
       gsap.from(".aboutdetail ul", {
         y: 100,  
         opacity: 0, 
@@ -104,13 +93,13 @@ function About() {
           scrub: 2, 
         },
       });
-      gsap.from(".rightabout", {
-        x: -100,  
+      gsap.from(".rightabout .card", {
+        x:100,  
         opacity: 0, 
         duration: 1,  
         stagger: 0.2, 
         scrollTrigger: {
-          trigger: ".rightabout", 
+          trigger: ".rightabout .card", 
           start: "top 85%", 
           end: "top 40%",
           scrub: 2, 
