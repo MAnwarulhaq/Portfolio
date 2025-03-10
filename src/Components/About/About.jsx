@@ -143,17 +143,10 @@ function About() {
             </ul>
           </div>
           <div className="education">
-            <h1>Education</h1>
+            <h1>Forntend Developer</h1>
             <ul>
-              <li>
-                <span>Degree</span>: BS Computer Science From FUUAST
-              </li>
-              <li>
-                <span>Intermediate</span>: Kabirian College From Kabirwala, district khanewal division multan
-              </li>
-              <li>
-                <span>Matriculation</span>: Matriculation from Govt High School Kukkar Hatta tehsil kabirwala district khanewal division multan
-              </li>
+              <li><span>As a web developer</span>:
+               I am passionate about creating visually appealing and user-friendly websites. With expertise in HTML, CSS, JavaScript, Bootstrap, and React Js, I strive to deliver high-quality and responsive designs that meet the needs of my clients. I look forward to collaborating with you and bringing your web development projects to life. Feel free to explore my portfolio and get in touch with me to discuss your project requirements. </li>
 
             </ul>
           </div>

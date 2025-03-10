@@ -4,37 +4,29 @@ import man from "../../Assets/man.png";
 import { Typewriter } from "react-simple-typewriter";
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import CV from "../../Assets/MyResume.pdf";
 
 function Home() {
 
-  useGSAP(()=>{
-    let tl1=gsap.timeline()
-    tl1.from(".line1",{
-      y:70,
-      duration:1,
-      opacity:0
-      
-  })
-  tl1.from(".line2",{
-    y:70,
-    duration:1,
-    opacity:0
-    
-})
-tl1.from(".line3",{
-  y:70,
-  duration:1,
-  opacity:0
-  
-})
+  useGSAP(() => {
+    let tl1 = gsap.timeline();
+    tl1.from(".line1", { y: 70, duration: 1, opacity: 0 });
+    tl1.from(".line2", { y: 70, duration: 1, opacity: 0 });
+    tl1.from(".line3", { y: 70, duration: 1, opacity: 0 });
 
-  gsap.from(".righthome img",{
-    x:200,
-    duration:1,
-    opacity:0
-  })
+    gsap.from(".righthome img", { x: 200, duration: 1, opacity: 0 });
+  });
 
-  })
+  // Function to handle CV download
+  const handleDownload = () => {
+    const cvUrl = CV; // Path to the CV in the public folder
+    const link = document.createElement("a");
+    link.href = cvUrl;
+    link.download = "Muhammad_Anwar_ul_Haq_CV.pdf"; // File name after download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div id="home">
@@ -55,10 +47,8 @@ tl1.from(".line3",{
               delaySpeed={1000}
             />
           </div>
-          <button>HIRE ME</button>
-          
+          <button onClick={handleDownload}>Download My CV</button>
         </div>
-        
       </div>
       <div className="righthome">
         <img src={man} alt="Developer" />
