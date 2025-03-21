@@ -12,18 +12,34 @@
 .slider {
     width: 90%;
     height: 300px;
-  
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Start se scroll hoga */
-    overflow-x: auto; /* Scroll allow karega */
+    justify-content: flex-start; 
+    overflow-x: auto; 
     overflow-y: hidden;
     gap: 20px;
-    padding: 20px; /* Extra spacing for better view */
-    scroll-behavior: smooth; /* Smooth scrolling effect */
+    padding: 20px;
+    scroll-behavior: smooth; 
     white-space: nowrap;
     scrollbar-width: none;
-    padding: 40px;
+    padding: 40px; 
+}
+.card{
+    width: 250px;
+    max-width: 280px;
+     height: 120px;
+     background-color: rgb(20,26,31);
+     position: relative;
+     overflow: hidden;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 2px 2px 10px black,2px 2px 20px black;
+     border-radius: 10px;
+     transition: all 0.2s;
+     cursor: pointer;
+     flex-shrink: 0;
 }
 
 #para{
