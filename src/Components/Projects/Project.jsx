@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from "../Cards/Card";
 import mern from "../../Assets/mern.png";
+import ecommecre from "../../Assets/Ecommerce.png";
 import { Link } from "react-router-dom";
 import "./Project.css";
 import gsap from 'gsap';
@@ -40,7 +41,7 @@ function Project() {
     <div id="projects">
       <h1 id="para">References available upon request.</h1>
       <div className="slider">
-        <Link to="https://buymoree.netlify.app/"><Card title="E-Commerce" image={mern} /></Link>
+        <Link to="https://buymoree.netlify.app/"><Card title="E-Commerce" image={ecommecre} /></Link>
         <Link> <Card title="Weather App" image={mern} /></Link>
         <Link><Card title="Portfolio Website" image={mern} /></Link>
         <Link><Card title="E-commerce Store" image={mern} /></Link>
