@@ -7,7 +7,7 @@
     
     }
 .leftabout{
-    width: 70%;
+    width: 60%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
     margin-left: 80px;
 }
 .rightabout{
-    width: 30%;
+    width: 40%;
     height: 100vh;
     gap: 10px;
     display: flex;
@@ -72,8 +72,6 @@
 @media (max-width:750px) {
     #about{
         width: 100%;
-        
-        
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -84,17 +82,14 @@
         width: 100%;
         gap: 10px;
         padding: 10px;
-        
-        
         margin: 0px;
         
         
         
     }
-    .rightabout{
+    .rightabout {
         width: 100%;
-    
-      
+        margin-top: 90px;
     }
     .cricle{
         width: 50px;

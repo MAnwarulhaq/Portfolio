@@ -21,7 +21,7 @@
 }
 
 .hovercard img{
-    width: 80%;
+    width: 60%;
     /* filter: drop-shadow(2px 2px 10px black); */
 }
 .hovercard{
@@ -30,7 +30,7 @@
     background: linear-gradient(to top,rgb(88,204,227,0.449),rgb(12,17,20,0.434));
     position: absolute;
     bottom: 0;
-    transform: translateY(100%);
+    transform: translateX(100%);
     transition: all ;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@
     backdrop-filter: blur(7px);
 }
 .card:hover .hovercard{
-    transform: translateY(0%);
+    transform: translateX(0%);
 }
 
 .card h1{
