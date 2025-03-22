@@ -7,7 +7,7 @@
     
     }
 .leftabout{
-    width: 60%;
+    width: 70%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
     margin-left: 80px;
 }
 .rightabout{
-    width: 40%;
+    width: 30%;
     height: 100vh;
     gap: 10px;
     display: flex;
