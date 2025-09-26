@@ -2,12 +2,11 @@ import React from "react";
 import "./Home.css";
 import man from "../../Assets/man.png";
 import { Typewriter } from "react-simple-typewriter";
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import CV from "../../Assets/MyResume.pdf";
 
 function Home() {
-
   useGSAP(() => {
     let tl1 = gsap.timeline();
     tl1.from(".line1", { y: 70, duration: 1, opacity: 0 });
@@ -19,17 +18,17 @@ function Home() {
 
   // Function to handle CV download
   const handleDownload = () => {
-    const cvUrl = CV; // Path to the CV in the public folder
+    const cvUrl = CV;
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "Muhammad_Anwar_ul_Haq_CV.pdf"; // File name after download
+    link.download = "Muhammad_Anwar_ul_Haq_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
-    <div id="home">
+    <div id="home" className="home-container">
       <div className="lefthome">
         <div className="homedetail">
           <div className="line1">I'M</div>
@@ -47,7 +46,9 @@ function Home() {
               delaySpeed={1000}
             />
           </div>
-          <button onClick={handleDownload}>Download My CV</button>
+          <button className="cv-btn" onClick={handleDownload}>
+            Download My CV
+          </button>
         </div>
       </div>
       <div className="righthome">

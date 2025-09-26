@@ -1,116 +1,126 @@
-#about{
+#about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* -------- Left Section -------- */
+.leftabout {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 80px;
+}
+
+/* -------- Right Section -------- */
+.rightabout {
+  width: 30%;
+  height: 100vh;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* -------- Circle + Line -------- */
+.cricle-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cricle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #7ad7ea;
+  box-shadow: 2px 2px 20px #7ad7ea;
+}
+
+.line {
+  width: 2px;
+  height: 100px;
+  background-color: #7ad7ea;
+}
+
+/* -------- About Details -------- */
+.aboutdetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutdetail ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutdetail h1 {
+  font-size: 20px;
+  background: linear-gradient(to right, rgb(198, 42, 96), white);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+}
+
+.aboutdetail li {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.aboutdetail span {
+  color: #7ad7ea;
+  font-weight: bold;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 750px) {
+  #about {
     width: 100%;
-    height: 100%;
-    display: flex;
-    box-sizing: border-box;
- 
-    
-    }
-.leftabout{
-    width: 70%;
-    height: 100vh;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 50px;
-    margin-left: 80px;
-}
-.rightabout{
-    width: 30%;
-    height: 100vh;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .leftabout {
+    width: 100%;
+    height: auto;
     flex-direction: column;
-}
-.cricle-line{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    padding: 10px;
+  }
+
+  /* ❌ Hide circle + line on mobile */
+  .cricle-line {
+    display: none;
+  }
+
+  .rightabout {
+    width: 100%;
+    height: auto;
     flex-direction: column;
-}
-.cricle{
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    background-color: #7ad7ea;
-    box-shadow: 2px 2px 20px  #7ad7ea;
+    gap: 15px;
+  }
 
-}
-.line{
-    width: 2px;
-    height: 100px;
-    background-color:  #7ad7ea;
-}
+  /* ✅ Headings center me */
+  .aboutdetail h1 {
+    font-size: 16px;
+    text-align: center;
+  }
 
-.aboutdetail{
-    display: flex;
-    flex-direction: column;
-    
+  /* ✅ Details left align */
+  .aboutdetail li {
+    font-size: 14px;
+    text-align: left;
+  }
 }
-.aboutdetail ul{
-    list-style: none;
-}
-.aboutdetail h1{
-    font-size: 20px;
-    background: linear-gradient(to right, rgb(198, 42, 96), white);
-
-    background-clip: text;
-    color: transparent;
-}
-
-.aboutdetail li{
-    color: white;
-}
-
-.aboutdetail span{
-    color: #7ad7ea;
-}
-
-@media (max-width:750px) {
-    #about{
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-     
-    }
-    .leftabout{
-        width: 100%;
-        gap: 10px;
-        padding: 10px;
-        margin: 0px;
-        
-        
-        
-    }
-    .rightabout {
-        width: 100%;
-        /* margin-top: 90px; */
-    }
-    .cricle{
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        background-color: #7ad7ea;
-        box-shadow: 2px 2px 20px  #7ad7ea;
-    
-    }
-    .line{
-        width: 2px;
-        height: 170px;
-        background-color:  #7ad7ea;
-    }
-    .aboutdetail h1{
-        font-size: 15px;
-        background: linear-gradient(to right, rgb(198, 42, 96), white);
-    
-        background-clip: text;
-        color: transparent;
-    }
-    
-}
- 
