@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from "../Cards/Card";
-import mern from "../../Assets/mern.png";
+import mern from "../../Assets/MERN.png";
 import ecommecre from "../../Assets/Ecommerce.png";
 import routing from "../../Assets/Routing.png";
 import { Link } from "react-router-dom";
