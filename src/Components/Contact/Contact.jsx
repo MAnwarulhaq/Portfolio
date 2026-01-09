@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Contact.css"
-import contact from "../../Assets/contact.png"
+import contact from "../../assets/contact.png"
 import { ScrollTrigger } from 'gsap/all'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'

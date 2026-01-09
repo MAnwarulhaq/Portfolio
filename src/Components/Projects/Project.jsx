@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from "../Cards/Card";
-import mern from "../../Assets/MERN.png";
-import ecommecre from "../../Assets/Ecommerce.png";
-import routing from "../../Assets/Routing.png";
+import mern from "../../assets/mern.png";
+import ecommecre from "../../assets/Ecommerce.png";
+import routing from "../../assets/Routing.png";
 import { Link } from "react-router-dom";
 import "./Project.css";
 import gsap from 'gsap';

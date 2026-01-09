@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.css";
-import man from "../../Assets/man.png";
+import man from "../../assets/man.png";
 import { Typewriter } from "react-simple-typewriter";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import CV from "../../Assets/MyResume.pdf";
+import CV from "../../assets/MyResume.pdf";
 
 function Home() {
   useGSAP(() => {
