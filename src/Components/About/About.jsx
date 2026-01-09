@@ -1,9 +1,9 @@
 import React from 'react'
 import "./About.css"
 import Card from '../Cards/Card'
-import mern from "../../assets/mern.png"
-import js_pic from "../../assets/Javascrip.png"
-import html_css from "../../assets/Html_Css.png"
+import mern from "../../Assets/mern.png"
+import js_pic from "../../Assets/Javascrip.png"
+import html_css from "../../Assets/Html_Css.png"
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
