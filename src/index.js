@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>   {/* 👈 Router wrap kare */}
+    <BrowserRouter>  
       <App />
     </BrowserRouter>
   </React.StrictMode>
