@@ -1,34 +1,38 @@
 #contact{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    overflow: hidden;
-    
+    margin-bottom: 40px;
 }
+
+/* LEFT */
 .leftcontact{
     width: 50%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .leftcontact img{
     width: 50%;
-    
     filter: drop-shadow(2px 2px 10px rgb(87, 196, 220));
 }
+
+/* RIGHT */
 .rightcontact{
     width: 50%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* FORM */
 form{
     width: 80%;
-    height: 70%;
     background-color: rgb(19, 25, 29);
-    box-shadow: 2px 2px 10px black,2px 2px 20px black;
+    box-shadow: 2px 2px 10px black, 2px 2px 20px black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,53 +40,62 @@ form{
     gap: 20px;
     border-radius: 20px;
     padding: 30px;
-   
-    
 }
+
 form:hover{
-    box-shadow: 2px 2px 10px rgb(105, 208, 215),2px 2px 20px rgb(105, 208, 215);
+    box-shadow: 2px 2px 10px rgb(105, 208, 215),
+                2px 2px 20px rgb(105, 208, 215);
 }
- form input{
+
+form input{
     width: 80%;
     height: 50px;
     border: 2px solid rgb(105, 208, 215);
     border-radius: 20px;
     padding: 20px;
     outline: none;
-   
-    
 }
-    
+
+/* TEXTAREA */
 #textarea{
     width: 80%;
     height: 100px;
     border: 2px solid rgb(105, 208, 215);
     border-radius: 20px;
     padding: 20px;
+    outline: none;
 }
-    
+
+/* BUTTON */
 #btn{
     width: 120px;
     height: 50px;
-    background-color: rgb(105, 208, 215) ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
+    background-color: rgb(105, 208, 215);
+    border: none;
+    border-radius: 20px;
     font-size: 20px;
+    cursor: pointer;
 }
-@media (max-width:750px) {
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 750px) {
     #contact{
         flex-direction: column;
+        min-height: auto;
     }
-    .leftcontact{
-        width: 100%;
 
-    }
+    .leftcontact,
     .rightcontact{
         width: 100%;
-        
+        min-height: auto;
+        padding: 40px 0;
     }
- 
-    
+
+    .leftcontact img{
+        width: 70%;
+    }
+
+    form{
+        width: 90%;
+    }
 }

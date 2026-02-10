@@ -1,7 +1,7 @@
 import React from 'react'
 import "./About.css"
 import Card from '../Cards/Card'
-import mern from "../../Assets/mern.png"
+import mern from "../../Assets/MERN.png"
 import js_pic from "../../Assets/Javascrip.png"
 import html_css from "../../Assets/Html_Css.png"
 import { useGSAP } from '@gsap/react'
@@ -139,9 +139,7 @@ function About() {
               <li>
                 <span>Email</span>: muhammadanwarulhaq15@gmail.com
               </li>
-              <li>
-                <span>Location</span>: Noor E Bahar Restaurant ,Saddar Karachi
-              </li>
+              
             </ul>
           </div>
           <div className="education">

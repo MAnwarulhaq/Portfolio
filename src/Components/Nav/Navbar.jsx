@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <nav>
-            <h1>PORTFOLIO</h1>
+            <h1>M Anwar Ul Haq</h1>
             <ul className='desktopmenu'>
                 <Link to="home" activeClass='active' spy={true} smooth={true}  duration={500}><li>Home</li></Link>
                 <Link to="about" activeClass='active' spy={true} smooth={true}  duration={500}><li>About</li></Link>
