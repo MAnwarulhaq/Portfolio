@@ -76,6 +76,7 @@ form input{
     border-radius: 20px;
     font-size: 20px;
     cursor: pointer;
+    padding: 0px;
 }
 
 /* MOBILE RESPONSIVE */
