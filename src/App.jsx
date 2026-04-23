@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import Project from "./Components/Projects/Project";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Chatbot from "./Components/ChatLing";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
     <About/>
     <Project/>
     <Contact/>
+    <Chatbot/>
    <Footer/>
     
     
